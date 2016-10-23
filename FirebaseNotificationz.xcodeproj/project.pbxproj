@@ -13,7 +13,13 @@
 		600C7BAB1DBC744600E8496A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600C7BAA1DBC744600E8496A /* Assets.xcassets */; };
 		600C7BAE1DBC744600E8496A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600C7BAC1DBC744600E8496A /* LaunchScreen.storyboard */; };
 		600C7BB81DBC74E100E8496A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 600C7BB71DBC74E100E8496A /* GoogleService-Info.plist */; };
-		600C7BBA1DBC7AF300E8496A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600C7BB91DBC7AF300E8496A /* InitialViewController.swift */; };
+		609A94FB1DBCC8FA0090ED49 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A94FA1DBCC8FA0090ED49 /* PostsViewController.swift */; };
+		609A94FE1DBCCAED0090ED49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A94FD1DBCCAED0090ED49 /* PostCell.swift */; };
+		609A95011DBCCB0B0090ED49 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A95001DBCCB0B0090ED49 /* Post.swift */; };
+		609A95031DBCCBBB0090ED49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A95021DBCCBBB0090ED49 /* LoginViewController.swift */; };
+		609A95051DBCCCDF0090ED49 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A95041DBCCCDF0090ED49 /* Server.swift */; };
+		609A95081DBCCD600090ED49 /* Server+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A95071DBCCD600090ED49 /* Server+Auth.swift */; };
+		60CB58241DBCCEB000C5D7DE /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB58231DBCCEB000C5D7DE /* SegueHandlerType.swift */; };
 		60EB86211DBC950E00785413 /* NotificationPayload in Resources */ = {isa = PBXBuildFile; fileRef = 60EB86201DBC950E00785413 /* NotificationPayload */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +32,14 @@
 		600C7BAD1DBC744600E8496A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600C7BAF1DBC744600E8496A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600C7BB71DBC74E100E8496A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		600C7BB91DBC7AF300E8496A /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		600C7BBB1DBC7D8400E8496A /* FirebaseNotificationz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseNotificationz.entitlements; sourceTree = "<group>"; };
+		609A94FA1DBCC8FA0090ED49 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		609A94FD1DBCCAED0090ED49 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		609A95001DBCCB0B0090ED49 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		609A95021DBCCBBB0090ED49 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		609A95041DBCCCDF0090ED49 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		609A95071DBCCD600090ED49 /* Server+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Server+Auth.swift"; sourceTree = "<group>"; };
+		60CB58231DBCCEB000C5D7DE /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
 		60EB86201DBC950E00785413 /* NotificationPayload */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotificationPayload; sourceTree = "<group>"; };
 		9BDEC04F877BF3A2AD07368A /* Pods_FirebaseNotificationz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseNotificationz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE81E3AA0D6C0B59CDC339E6 /* Pods-FirebaseNotificationz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseNotificationz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseNotificationz/Pods-FirebaseNotificationz.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +81,10 @@
 				600C7BBB1DBC7D8400E8496A /* FirebaseNotificationz.entitlements */,
 				60EB86201DBC950E00785413 /* NotificationPayload */,
 				600C7BA31DBC744600E8496A /* AppDelegate.swift */,
+				60CB58221DBCCEA200C5D7DE /* Extensions */,
+				609A95061DBCCCE20090ED49 /* Server */,
+				609A94FF1DBCCB050090ED49 /* Models */,
+				609A94FC1DBCCAE20090ED49 /* Views */,
 				600C7BB61DBC74C100E8496A /* Controllers */,
 				600C7BB51DBC746F00E8496A /* Storyboards */,
 				600C7BAA1DBC744600E8496A /* Assets.xcassets */,
@@ -90,9 +106,43 @@
 		600C7BB61DBC74C100E8496A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				600C7BB91DBC7AF300E8496A /* InitialViewController.swift */,
+				609A94FA1DBCC8FA0090ED49 /* PostsViewController.swift */,
+				609A95021DBCCBBB0090ED49 /* LoginViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		609A94FC1DBCCAE20090ED49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				609A94FD1DBCCAED0090ED49 /* PostCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		609A94FF1DBCCB050090ED49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				609A95001DBCCB0B0090ED49 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		609A95061DBCCCE20090ED49 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				609A95041DBCCCDF0090ED49 /* Server.swift */,
+				609A95071DBCCD600090ED49 /* Server+Auth.swift */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		60CB58221DBCCEA200C5D7DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60CB58231DBCCEB000C5D7DE /* SegueHandlerType.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		81805666941E56F992F2D484 /* Frameworks */ = {
@@ -243,8 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609A94FB1DBCC8FA0090ED49 /* PostsViewController.swift in Sources */,
+				609A95081DBCCD600090ED49 /* Server+Auth.swift in Sources */,
+				60CB58241DBCCEB000C5D7DE /* SegueHandlerType.swift in Sources */,
 				600C7BA41DBC744600E8496A /* AppDelegate.swift in Sources */,
-				600C7BBA1DBC7AF300E8496A /* InitialViewController.swift in Sources */,
+				609A94FE1DBCCAED0090ED49 /* PostCell.swift in Sources */,
+				609A95031DBCCBBB0090ED49 /* LoginViewController.swift in Sources */,
+				609A95051DBCCCDF0090ED49 /* Server.swift in Sources */,
+				609A95011DBCCB0B0090ED49 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

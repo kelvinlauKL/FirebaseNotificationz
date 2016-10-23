@@ -25,12 +25,11 @@ extension AppDelegate: UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
     let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
     UNUserNotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: { _, _ in })
-    UNUserNotificationCenter.current().delegate = self
     
+    UNUserNotificationCenter.current().delegate = self
     FIRMessaging.messaging().remoteMessageDelegate = self
     
     application.registerForRemoteNotifications()
-    
     NotificationCenter.default.addObserver(self, selector: #selector(tokenRefreshNotification), name: .firInstanceIDTokenRefresh, object: nil)
     return true
   }
