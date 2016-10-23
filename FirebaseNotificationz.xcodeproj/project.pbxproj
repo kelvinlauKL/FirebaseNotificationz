@@ -20,6 +20,8 @@
 		609A95051DBCCCDF0090ED49 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A95041DBCCCDF0090ED49 /* Server.swift */; };
 		609A95081DBCCD600090ED49 /* Server+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A95071DBCCD600090ED49 /* Server+Auth.swift */; };
 		60CB58241DBCCEB000C5D7DE /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB58231DBCCEB000C5D7DE /* SegueHandlerType.swift */; };
+		60CB58261DBCCFB800C5D7DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB58251DBCCFB800C5D7DE /* User.swift */; };
+		60CB58281DBCE21F00C5D7DE /* Server+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB58271DBCE21F00C5D7DE /* Server+Database.swift */; };
 		60EB86211DBC950E00785413 /* NotificationPayload in Resources */ = {isa = PBXBuildFile; fileRef = 60EB86201DBC950E00785413 /* NotificationPayload */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		609A95041DBCCCDF0090ED49 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		609A95071DBCCD600090ED49 /* Server+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Server+Auth.swift"; sourceTree = "<group>"; };
 		60CB58231DBCCEB000C5D7DE /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		60CB58251DBCCFB800C5D7DE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		60CB58271DBCE21F00C5D7DE /* Server+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Server+Database.swift"; sourceTree = "<group>"; };
 		60EB86201DBC950E00785413 /* NotificationPayload */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotificationPayload; sourceTree = "<group>"; };
 		9BDEC04F877BF3A2AD07368A /* Pods_FirebaseNotificationz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseNotificationz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE81E3AA0D6C0B59CDC339E6 /* Pods-FirebaseNotificationz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseNotificationz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseNotificationz/Pods-FirebaseNotificationz.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				609A95001DBCCB0B0090ED49 /* Post.swift */,
+				60CB58251DBCCFB800C5D7DE /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			children = (
 				609A95041DBCCCDF0090ED49 /* Server.swift */,
 				609A95071DBCCD600090ED49 /* Server+Auth.swift */,
+				60CB58271DBCE21F00C5D7DE /* Server+Database.swift */,
 			);
 			name = Server;
 			sourceTree = "<group>";
@@ -298,9 +304,11 @@
 				60CB58241DBCCEB000C5D7DE /* SegueHandlerType.swift in Sources */,
 				600C7BA41DBC744600E8496A /* AppDelegate.swift in Sources */,
 				609A94FE1DBCCAED0090ED49 /* PostCell.swift in Sources */,
+				60CB58261DBCCFB800C5D7DE /* User.swift in Sources */,
 				609A95031DBCCBBB0090ED49 /* LoginViewController.swift in Sources */,
 				609A95051DBCCCDF0090ED49 /* Server.swift in Sources */,
 				609A95011DBCCB0B0090ED49 /* Post.swift in Sources */,
+				60CB58281DBCE21F00C5D7DE /* Server+Database.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

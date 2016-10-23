@@ -4,4 +4,5 @@ target 'FirebaseNotificationz' do
   # Pods for FirebaseNotificationz
   pod 'Firebase/Messaging'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end
