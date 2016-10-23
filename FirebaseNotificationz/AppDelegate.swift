@@ -71,12 +71,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
   }
 }
 
-// MARK:
+// MARK: - FIRMessagingDelegate
 extension AppDelegate: FIRMessagingDelegate {
   func applicationReceivedRemoteMessage(_ remoteMessage: FIRMessagingRemoteMessage) {
     print("FIRMessagingRemoteMessage Received: \(remoteMessage.appData)")
   }
 }
-
-
-
