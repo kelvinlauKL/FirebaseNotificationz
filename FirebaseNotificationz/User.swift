@@ -6,9 +6,6 @@
 //  Copyright © 2016 Kelvin Lau. All rights reserved.
 //
 
-import Foundation
-import Firebase
-
 struct User {
   var uid: String
   var name: String

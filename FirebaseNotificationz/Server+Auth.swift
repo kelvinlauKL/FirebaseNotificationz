@@ -19,6 +19,12 @@ extension Server {
     return FIRAuth.auth()
   }
   
+  static var currentUserId: String {
+    let user = FIRAuth.auth()?.currentUser
+    return user!.uid
+  }
+
+  
   static func createAccount(withEmail email: String, password: String, completion: @escaping (AuthResponse) -> ()) {
     guard let auth = Server.auth else { return completion(.failure("Couldn't even get \"FIRAuth.auth()\"! This is a Firebase problem. Better contact their developer support team.")) }
     auth.createUser(withEmail: email, password: password) { _, error in
