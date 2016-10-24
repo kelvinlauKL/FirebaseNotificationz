@@ -19,9 +19,8 @@ extension Server {
     return FIRAuth.auth()
   }
   
-  static var currentUserId: String {
-    let user = FIRAuth.auth()?.currentUser
-    return user!.uid
+  static var currentUserId: String? {
+    return FIRAuth.auth()?.currentUser?.uid
   }
 
   

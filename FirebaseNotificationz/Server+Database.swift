@@ -20,8 +20,8 @@ extension Server {
     return FIRDatabase.database().reference()
   }
   
-  private static var usersRef: FIRDatabaseReference {
-    return Server.rootRef.child("users")
+  private static var profilesRef: FIRDatabaseReference {
+    return Server.rootRef.child("profiles")
   }
   
   private static var postsRef: FIRDatabaseReference {
@@ -32,13 +32,13 @@ extension Server {
     return Server.rootRef.childByAutoId().key
   }
   
-  static func loadUser(withIdentifier identifier: String, completion: @escaping (User?) -> ()) {
-    Server.usersRef.child(identifier).observeSingleEvent(of: .value, with: { snapshot in
-      guard let userDict = snapshot.value as? [String: Any] else { return completion(nil) }
-      let user = User(dictionary: userDict)
+  static func loadProfile(withIdentifier identifier: String, completion: @escaping (Profile?) -> ()) {
+    Server.profilesRef.child(identifier).observeSingleEvent(of: .value, with: { snapshot in
+      guard let profileDict = snapshot.value as? [String: Any] else { return completion(nil) }
+      let profile = Profile(dictionary: profileDict)
       
       DispatchQueue.main.async {
-        completion(user)
+        completion(profile)
       }
     })
   }
@@ -54,8 +54,8 @@ extension Server {
     })
   }
   
-  static func save(user: User) {
-    Server.usersRef.child(user.uid).setValue(user.json)
+  static func save(profile: Profile) {
+    Server.profilesRef.child(profile.uid).setValue(profile.json)
   }
   
   static func save(post: Post) {

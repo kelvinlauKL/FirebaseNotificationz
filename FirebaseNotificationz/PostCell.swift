@@ -24,8 +24,8 @@ final class PostCell: UITableViewCell {
   var post: Post! { didSet {
     postDetailsLabel.text = post.details
     
-    Server.loadUser(withIdentifier: post.userId) { user in
-      self.usernameLabel.text = user?.name
+    Server.loadProfile(withIdentifier: post.userId) { profile in
+      self.usernameLabel.text = profile?.name
     }
   }}
 }

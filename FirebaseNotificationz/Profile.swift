@@ -1,12 +1,12 @@
 //
-//  User.swift
+//  Profile.swift
 //  FirebaseNotificationz
 //
 //  Created by Kelvin Lau on 2016-10-23.
 //  Copyright © 2016 Kelvin Lau. All rights reserved.
 //
 
-struct User {
+struct Profile {
   var uid: String
   var name: String
   var postIds: [String]
@@ -19,14 +19,14 @@ struct User {
 }
 
 // MARK: - Mutating Methods
-extension User {
+extension Profile {
   mutating func add(post: Post) {
     postIds.append(post.uid)
   }
 }
 
 // MARK: - FirebaseConvertible
-extension User: FirebaseConvertible {
+extension Profile: FirebaseConvertible {
   var json: [String: Any] {
     return [
       "uid": uid,
@@ -50,8 +50,8 @@ extension User: FirebaseConvertible {
   }
 }
 
-extension User: Equatable {}
+extension Profile: Equatable {}
 
-func ==(lhs: User, rhs: User) -> Bool {
+func ==(lhs: Profile, rhs: Profile) -> Bool {
   return lhs.uid == rhs.uid
 }

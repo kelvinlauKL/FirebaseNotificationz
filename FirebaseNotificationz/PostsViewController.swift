@@ -38,7 +38,7 @@ private extension PostsViewController {
     
     let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
       guard let detailText = alertController.textFields?[0].text else { fatalError() }
-      let post = Post(details: detailText, userId: Server.currentUserId)
+      let post = Post(details: detailText, userId: Server.currentUserId!)
       Server.save(post: post)
     }
     
